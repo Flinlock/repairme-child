@@ -1,0 +1,3 @@
+[30-Sep-2017 02:14:40 America/Chicago] PHP Fatal error:  Call to undefined function repairme_get_theme_mods() in D:\home\edgecomputerrepair.com\wwwroot\wp-content\themes\repairme-child\header.php on line 8
+[06-Oct-2017 12:08:00 America/Chicago] PHP Fatal error:  Call to undefined function repairme_get_theme_mods() in D:\home\edgecomputerrepair.com\wwwroot\wp-content\themes\repairme-child\header.php on line 8
+[09-Oct-2017 10:59:56 America/Chicago] PHP Fatal error:  Call to undefined function repairme_get_theme_mods() in D:\home\edgecomputerrepair.com\wwwroot\wp-content\themes\repairme-child\header.php on line 8

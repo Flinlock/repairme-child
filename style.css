@@ -1,0 +1,319 @@
+/*
+Theme Name: RepairMe Child
+Theme URI: http://webdesign-finder.com/repairme
+Author: Leibovitz
+Author URI: http://webdesign-finder.com/
+Description: RepairMe Blog Theme.
+Version: 1.0
+Template: repairme
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: blue, black, green, white, light, dark, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: repairme-child
+
+*/
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+.fw-listbox-description { text-align: justify; }
+
+
+.headerimg {float: left; position: absolute; margin-left: 8%; width: 125px; z-index: 5000;}
+.imgnav { position: absolute; width: 200px; margin-top: 8px; margin-left: 5px;}
+.imgnav li a {height: 50px;}
+.imgnav img {height: 45px; padding: 5px; z-index: 5000;}
+.entry-header-wrapper .page-title { font-size: 45px; font-size: 4rem; }
+.phone-img { float: right; }
+.phone-header { width: 150px; float: right; right: 5%; padding-top: 8px; height: 30px; position: absolute; z-index: 5000;}
+
+.header__style1 .sticky-wrapper {height: 60px !important;}
+div.header__row2 {height: 60px !important;}
+.main-nav ul li a {color: #fff;}
+
+.entry-header-wrapper {padding: 25px 0 25px 0;}
+.main-nav {padding-top: 5px;}
+.header__logo-inner { margin-top: 8px;}
+
+.imgnav li {display: inline;}
+.entry-header-wrapper .page-title { font-size: 40px; font-size: 4rem; }
+.phone-header { float: right; right: 5%; padding-top: 5px;width: 150px; height: 30px; position: absolute; z-index: 5000;}
+
+/* 768 Size (portrait and landscape) ----------- */
+@media only screen 
+and (max-device-width : 1280px)
+and (min-device-width : 768px) {
+  /* Styles */
+.headerimg { margin-left: 15%; }
+.phone-img {margin-right:15px;}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 480px)
+  /* Styles */ {
+.phone-header { padding-top: 5px; right: 0%;}
+.phone-img {width: 120px;margin-right:5px;}
+.headerimg { margin-left: 0%; padding-top: 5px;}
+.imgnav { float: left; width: 170px;} 
+.imgnav img {display: none;}
+}
+
+/* Hard drive pricing modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    z-index: 999;
+}
+
+/* Modal headers */
+.modal-header {
+    font-weight: bold;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The modal open text */
+.modal-open {
+    color: #0e42ff;
+    cursor: pointer;
+}
+.modal-open:hover,
+.modal-open:focus {
+    text-decoration: underline;
+}
+
+/*
+ * Hide default theme header
+ */
+.entry-header-wrapper {
+    display: none;
+}
+
+/*
+ * Custom image header and overlay text
+ * General and device agnostic styles
+ */
+
+/* General overlay positioning */
+.custom-image-header .custom-image-header-overlay {
+    border-radius: 4px;
+    font-size: 2rem;
+    color: white !important;
+    text-align: center;
+    background-color: rgba(29, 29, 29, 0.8);
+    position: absolute;
+}
+/* Fix color and padding for header text */
+.custom-image-header .custom-image-header-overlay h3 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Fix padding for paragraph text */
+.custom-image-header .custom-image-header-overlay p {
+    margin-bottom: 10px;
+}
+
+/* Capitalize the sub heading */
+.custom-image-header-overlay {
+    text-transform: uppercase;
+}
+.custom-image-header-overlay h3 {
+    text-transform: capitalize;
+}
+
+/*
+ * Custom image header and overlay text
+ * Device specific styles
+ */
+
+/* Small Phones */
+@media only screen and (max-width: 377px) {
+
+    .custom-image-header .col-inner .unyson-media-image img {
+
+    }
+
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 11%;
+        width: 70%;
+        margin-right: 11%;
+        top: 6%;
+        font-size: 12px;
+    }
+    .custom-image-header .custom-image-header-overlay h3 {
+        font-size: 2rem;
+    }
+}
+/* Large Phones */
+@media only screen and (min-width: 376px) and (max-width: 600px) {
+    .custom-image-header .col-inner .unyson-media-image img {
+
+    }
+    .custom-image-header .col-inner .unyson-media-image img {
+
+    }
+    .custom-image-header .custom-image-header-overlay {
+
+        margin-left: 11%;
+        width: 70%;
+        margin-right: 11%;
+        top: 6%;
+        font-size: 12px;
+    }
+    .custom-image-header .custom-image-header-overlay h3 {
+        font-size: 2rem;
+    }
+}
+/* Medium tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .custom-image-header {
+        padding: 0;
+    }
+    .custom-image-header .col-inner .unyson-media-image img {
+        height: 20rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+        top: 20%;
+    }
+
+}
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .custom-image-header .col-inner .unyson-media-image img {
+        height: 20rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+        top: 20%;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    .custom-image-header {
+        margin-top: 5rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 24%;
+        width: 50%;
+        margin-right: 24%;
+        top: 30%;
+    }
+}
+
+/**
+ * Homepage Blurbs
+ */
+.blurb .col-inner {
+    color: white;
+    background-color: #0e42ff;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+.blurb .col-inner p {
+    margin: 26px !important;
+}
+
+/*
+ * Menu items that don't go anywhere still need a pointer cursor
+ */
+.nonclick-menu-item {
+    cursor: pointer;
+}
+
+/*
+ * Homepage headings
+ */
+.home-headings {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * Read more sections
+ */
+.read-more-button {
+    text-align: center;
+    color: #004cff;
+}
+
+.read-more-button-dark {
+    text-align: center;
+    color: #004cff;
+    background-color: #2f2f2f;
+}
+
+/*
+ * Homepage - rearrange order of boxes, scale for mobile
+ */
+@media only screen and (max-width: 768px) {
+    .flex-container-home .row {
+        display: flex;
+        flex-flow: column;
+    }
+    .flex-first {
+        order: 1;
+    }
+    .flex-second {
+        order: 2;
+    }
+    .flex-third {
+        order: 3;
+    }
+    .bordered-box {
+        margin-bottom: 2rem;
+    }
+}
+
+/*
+ * Interactive sidebar
+ */
+.sidebar-button-wrapper {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    top: 4rem;
+}
+.edge-sidebar-right {
+    z-index: 10;
+    position: absolute;
+    right: -7rem;
+    background-color: white;
+    min-width: 40%;
+}
