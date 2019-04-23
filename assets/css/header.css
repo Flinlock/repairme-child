@@ -1,0 +1,243 @@
+/* 
+Global styles for header
+Includes logo, nav menus, etc
+
+
+*/
+
+
+/* Device agnostic tweaks */
+
+
+/* Header solid color instead of image - delete to go back to old image */
+ div .header__row2 {
+	background: unset !important;
+	background-color: rgba(12,12,12,0.8) !important;
+}
+
+/* Phone button size, positioning for all devices */
+.phone-header {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    z-index: 5000;
+    right: 5%;
+}
+
+/* Phone header hover and position */
+ .phone-header:hover img {
+	background-color: rgba(34, 167, 240, .5);
+    border-radius: 10px;
+}
+.phone-header {
+	top: 20%;
+}
+
+/* General header styles */
+.headerimg {
+    float: left;
+    position: absolute;
+    margin-left: 8%;
+    width: 125px;
+    z-index: 5000;
+}
+.header__style1 .sticky-wrapper {
+    height: 60px !important;
+}
+div.header__row2 {
+    height: 60px !important;
+}
+.entry-header-wrapper {
+    padding: 25px 0 25px 0;
+}
+
+/* nav menus */
+.main-nav ul li a {
+    color: #fff;
+}
+.main-nav {
+    padding-top: 5px;
+}
+/* Menu items hover color */
+ .header__style1 .main-nav>ul>li :hover {
+	color: #004cff;
+}
+/* Submenu hover color */
+.sub-menu li a:hover {
+	color: #004cff !important;
+}
+
+/* Fix cursor for non-link */
+.menu-item-2230 a:hover {
+	cursor: pointer;
+}
+
+/* logo */
+.header__logo-inner {
+    margin-top: 8px;
+}
+/* Menu items bigger and bolder */
+ .main-nav ul li a {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* But not submenu */
+.sub-menu li a {
+	font-size: 14px !important;
+}
+
+/*
+ * Shrink submenu width
+ * 
+ * Add colored border and background
+ */
+.main-nav ul li ul {
+	min-width: 240px;
+	border-radius: 4px;
+	border: #000 1px solid;
+	background-color: #000;
+	color: #f0f0f0;
+}
+.main-nav ul li ul li a {
+	color: #f0f0f0;
+}
+/* Remove bullets */
+.main-nav ul li ul li a::before {
+	display: none;
+}
+
+
+/* Mobile specific tweaks */
+
+
+/* Make header sticky even on small devices */
+@media screen and (max-width: 1023px) {
+    .header-sticky {
+        width: 100%;
+        position: fixed !important;
+        position: fixed;
+        top: 0px;
+        z-index: auto;
+    }
+}
+
+
+/* Position menu button for mobile */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-buttons-menu .button-li--mobile-menu {
+        float: left;
+    }
+}
+
+
+/* Make sure logo always floats left on mobile */
+@media only screen and (max-width: 767px) {
+    .logo-use-image a {
+        float: left;
+    }
+    .only-mobile-button {
+        margin-top: -4.5rem;
+    }
+}
+
+
+/*
+ * Properly style and position header logo on devices
+ */
+
+/* small phones */
+@media only screen and (max-width: 567px) {
+    .header__logo-inner {
+        margin-top: 1rem;
+    }
+    .logo-div {
+        padding: 0;
+    }
+    div.logo-use-image img.logo_big {
+        height: 30px;
+        max-width: unset;
+        max-height: unset;
+    }
+}
+
+
+/* large phones */
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+    .header__logo-inner {
+        margin-top: 1rem;
+    }
+    .logo-div {
+        padding: 0;
+    }
+    div.logo-use-image img.logo_big {
+        height: 40px;
+        max-width: unset;
+        max-height: unset;
+    }
+}
+
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1023) {
+    .header__logo-inner {
+        position: absolute;
+        left: -8rem;
+        top: 0;
+        margin-top: 1rem;
+    }
+    .logo-div {
+        padding: 0;
+    }
+    div.logo-use-image img.logo_big {
+        height: 30px;
+        max-width: unset;
+        max-height: unset;
+    }
+    .header__menu {
+        margin-left: -8rem;
+    }
+}
+
+
+/* horizontal tablet / smallish to mid desktop */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .header__logo-inner {
+        position: absolute;
+        left: -2rem;
+        top: 0;
+        margin-top: 1rem;
+    }
+    .logo-div {
+        padding: 0;
+    }
+    div.logo-use-image img.logo_big {
+        height: 30px;
+        max-width: unset;
+        max-height: unset;
+    }
+    .header__menu {
+        margin-left: -5rem;
+    }
+    .phone-header {
+        right: 1rem;
+    }
+}
+
+/* big desktops */
+@media only screen and (min-width: 1200px) {
+    .header__logo-inner {
+        position: absolute;
+        left: -8rem;
+        top: 0;
+        margin-top: 1rem;
+    }
+    .logo-div {
+        padding: 0;
+    }
+    div.logo-use-image img.logo_big {
+        height: 40px;
+        max-width: unset;
+        max-height: unset;
+    }
+}

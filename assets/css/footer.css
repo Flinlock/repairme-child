@@ -1,0 +1,36 @@
+/*
+ * Footer styles
+ */
+
+ /* Make footer easier to read */
+.widget-contacts-table {
+	color: #f3f3f3;
+}
+/* Dark blue hover for footer menu items */
+.footer .widget_nav_menu li a:hover {
+	color: #004cff;
+}
+/* Footer less giant */
+.footer {
+	padding: 16px 0 0 0;
+}
+.copyright {
+	padding: 0 0 16px 0;
+}
+
+/* Match footer with header */
+ .footer {
+	background-color: rgba(12,12,12,0.8);
+	background-image: unset;
+}
+.footer--with-bg::after {
+	background-color: rgba(12,12,12);
+}
+.copyright {
+	background-color: rgba(12,12,12) !important;
+}
+
+/* make footer not interfere with modals */
+.footer {
+	z-index: 0;
+}

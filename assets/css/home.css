@@ -1,0 +1,23 @@
+/*
+Homepage-specific stylings
+*/
+
+/* Homepage - rearrange order of boxes, scale for mobile */
+ @media only screen and (max-width: 991px) {
+    .flex-container-home .row {
+        display: flex;
+        flex-flow: column;
+    }
+    .flex-first {
+        order: 1;
+    }
+    .flex-second {
+        order: 2;
+    }
+    .flex-third {
+        order: 3;
+    }
+    .bordered-box {
+        margin-bottom: 2rem;
+    }
+}

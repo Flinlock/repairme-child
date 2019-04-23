@@ -1,0 +1,38 @@
+/* 
+ * All site buttons
+ */
+
+.fw-btn {
+	padding: 9px 15px 9px 15px;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 #15306f;
+	background-color: #004cff;
+	border-color: #004cff
+}
+.fw-btn:hover {
+	color: #004cff;
+	box-shadow: 0 2px 0 #15306f;
+	background-color: #fff;
+}
+.fw-btn:active {
+	transform: translateY(2px);
+	box-shadow: unset;
+}
+
+/* Make form buttons match other buttons */
+ .wpcf7-form .wpcf7-submit {
+	padding: 9px 15px 9px 15px;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 #ccc;
+	background-color: #004cff;
+	border-color: #004cff;
+}
+.wpcf7-form .wpcf7-submit:active {
+	transform: translateY(2px);
+	box-shadow: unset;
+}
+.wpcf7-form .wpcf7-submit:hover {
+	color: #004cff;
+	background-color: white;
+	border-color: #004cff;
+}

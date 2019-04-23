@@ -1,0 +1,74 @@
+/* 
+Styles for all site modals
+*/
+
+/* Modal itself */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 999;
+}
+
+/* Modal headers */
+.modal-header {
+    font-weight: bold;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The modal open text */
+.modal-open {
+    color: #0e42ff;
+    cursor: pointer;
+}
+.modal-open:hover,
+.modal-open:focus {
+    text-decoration: underline;
+}
+
+/* Modal Figure position, margins */
+.modal-content .modal-image figure {
+	position: relative;
+	float: right;
+	width: unset !important;
+	margin-bottom: 0;
+	margin-top: .5rem;
+}
+/* Modal image caption */
+.modal-content .modal-image figure figcaption {
+	font-size: 1.5rem;
+}
+/* Modal image */
+.modal-content .modal-image figure img {
+	border-radius: 4px;
+	width: 100%;
+}

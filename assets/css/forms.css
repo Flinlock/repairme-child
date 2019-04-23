@@ -1,0 +1,13 @@
+/*
+ * Form specific styles
+ * For Contact Form 7
+ */
+
+ /* Form spacing and neatness tweaks */
+#wpcf7-f1997-p2003-o1 .wpcf7-form-control {
+	margin-top: 0 !important;
+}
+#wpcf7-f1997-p2003-o1 .fields {
+	margin-bottom: 2rem;
+}
+

@@ -1,0 +1,46 @@
+/*
+ * Custom styled bordered container
+ * Has some cool variants
+ */
+
+/* Add border and shadow to elements if we want */
+ .bordered-box .col-inner {
+	padding: 4px;
+	border-radius: 4px;
+	border: #d9d9d9 1px solid;
+	box-shadow: 4px 4px 8px rgba(148, 149, 152, 0.35);
+}
+/* home page only */
+body.home .bordered-box .col-inner strong {
+	color: #f0f0f0;
+}
+body.home .bordered-box .col-inner {
+	border: #8b8b8e 1px solid;
+}
+/* Correct text placement for bordered boxes */
+.bordered-box .col-inner p, .bordered-box .col-inner ul, .bordered-box .col-inner h4 {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+ /* Bordered box dark fill customizations */
+.bordered-box-fill-dark .col-inner {
+    background-color: #2f2f2f;
+}
+
+/* featured boxes */
+.featured-box {
+	border: solid 1px black;
+	border-radius: 4px;
+}
+.featured-box .featured-box-header {
+	border: solid 1px black;
+	padding: 4px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+.featured-box .featured-box-content {
+	padding: 1rem;
+	margin: 0;
+}

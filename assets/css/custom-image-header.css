@@ -1,0 +1,114 @@
+/*
+ * Custom image header and overlay text
+ *
+ * General and device agnostic styles
+ */
+
+
+/* General overlay positioning */
+.custom-image-header .custom-image-header-overlay {
+    border-radius: 4px;
+    font-size: 2rem;
+    color: white !important;
+    text-align: center;
+    background-color: rgba(29, 29, 29, 0.8);
+    position: absolute;
+}
+
+/* Fix color and padding for header text */
+.custom-image-header .custom-image-header-overlay h3 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Fix padding for paragraph text */
+.custom-image-header .custom-image-header-overlay p {
+    margin-bottom: 10px;
+}
+
+/* Capitalize the sub heading */
+.custom-image-header-overlay {
+    text-transform: uppercase;
+}
+.custom-image-header-overlay h3 {
+    text-transform: capitalize;
+}
+
+/*
+ * Device specific styles
+ */
+
+
+/* Small Phones */
+@media only screen and (max-width: 377px) {
+    .custom-image-header .col-inner .unyson-media-image img {}
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 11%;
+        width: 70%;
+        margin-right: 11%;
+        top: 6%;
+        font-size: 12px;
+    }
+    .custom-image-header .custom-image-header-overlay h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Large Phones */
+@media only screen and (min-width: 376px) and (max-width: 600px) {
+    .custom-image-header .col-inner .unyson-media-image img {}
+    .custom-image-header .col-inner .unyson-media-image img {}
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 11%;
+        width: 70%;
+        margin-right: 11%;
+        top: 6%;
+        font-size: 12px;
+    }
+    .custom-image-header .custom-image-header-overlay h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .custom-image-header {
+        padding: 0;
+    }
+    .custom-image-header .col-inner .unyson-media-image img {
+        height: 20rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+        top: 20%;
+    }
+}
+
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .custom-image-header .col-inner .unyson-media-image img {
+        height: 20rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+        top: 20%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    .custom-image-header {
+        margin-top: 5rem;
+    }
+    .custom-image-header .custom-image-header-overlay {
+        margin-left: 24%;
+        width: 50%;
+        margin-right: 24%;
+        top: 30%;
+    }
+}

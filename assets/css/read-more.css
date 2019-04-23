@@ -1,0 +1,14 @@
+/*
+ * All styles related to read more sections 
+ */
+
+.read-more-button {
+    text-align: center;
+    color: #004cff;
+}
+
+.read-more-button-dark {
+    text-align: center;
+    color: #004cff;
+    background-color: #2f2f2f;
+}
