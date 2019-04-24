@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "A child theme for the Repairme Wordpress Theme used on edgedatarecovery.com and edgecomputerrepair.com",
   "main": "functions.php",
-  "dependencies": {
-    "readmore-js": "^2.2.1",
-    "jquery": "^3.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

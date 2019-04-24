@@ -27,12 +27,6 @@ Text Domain: repairme-child
 @import "assets/css/forms.css";
 @import "assets/css/bordered-box.css";
 
-
-/* Global background color */
-body.home .content-area {
-    background-color: #0b0b0b;
-}
-
 /* hide the default theme header globally */
 .entry-header-wrapper {
     display: none !important;

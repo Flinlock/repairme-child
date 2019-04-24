@@ -33,14 +33,6 @@ Includes logo, nav menus, etc
 	top: 20%;
 }
 
-/* General header styles */
-.headerimg {
-    float: left;
-    position: absolute;
-    margin-left: 8%;
-    width: 125px;
-    z-index: 5000;
-}
 .header__style1 .sticky-wrapper {
     height: 60px !important;
 }
@@ -228,7 +220,7 @@ div.header__row2 {
 @media only screen and (min-width: 1200px) {
     .header__logo-inner {
         position: absolute;
-        left: -8rem;
+        left: -15rem;
         top: 0;
         margin-top: 1rem;
     }
