@@ -1,8 +1,6 @@
 /* 
 Global styles for header
 Includes logo, nav menus, etc
-
-
 */
 
 
@@ -91,145 +89,11 @@ div.header__row2 {
 	background-color: #000;
 	color: #f0f0f0;
 }
+
 .main-nav ul li ul li a {
 	color: #f0f0f0;
 }
 /* Remove bullets */
 .main-nav ul li ul li a::before {
 	display: none;
-}
-
-
-/* Mobile specific tweaks */
-
-
-/* Make header sticky even on small devices */
-@media screen and (max-width: 1023px) {
-    .header-sticky {
-        width: 100%;
-        position: fixed !important;
-        position: fixed;
-        top: 0px;
-        z-index: auto;
-    }
-}
-
-
-/* Position menu button for mobile */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .header-buttons-menu .button-li--mobile-menu {
-        float: left;
-    }
-}
-
-
-/* Make sure logo always floats left on mobile */
-@media only screen and (max-width: 767px) {
-    .logo-use-image a {
-        float: left;
-    }
-    .only-mobile-button {
-        margin-top: -4.5rem;
-    }
-}
-
-
-/*
- * Properly style and position header logo on devices
- */
-
-/* small phones */
-@media only screen and (max-width: 567px) {
-    .header__logo-inner {
-        margin-top: 1rem;
-    }
-    .logo-div {
-        padding: 0;
-    }
-    div.logo-use-image img.logo_big {
-        height: 30px;
-        max-width: unset;
-        max-height: unset;
-    }
-}
-
-
-/* large phones */
-@media only screen and (min-width: 568px) and (max-width: 768px) {
-    .header__logo-inner {
-        margin-top: 1rem;
-    }
-    .logo-div {
-        padding: 0;
-    }
-    div.logo-use-image img.logo_big {
-        height: 40px;
-        max-width: unset;
-        max-height: unset;
-    }
-}
-
-
-/* tablet */
-@media only screen and (min-width: 769px) and (max-width: 1023) {
-    .header__logo-inner {
-        position: absolute;
-        left: -8rem;
-        top: 0;
-        margin-top: 1rem;
-    }
-    .logo-div {
-        padding: 0;
-    }
-    div.logo-use-image img.logo_big {
-        height: 30px;
-        max-width: unset;
-        max-height: unset;
-    }
-    .header__menu {
-        margin-left: -8rem;
-    }
-}
-
-
-/* horizontal tablet / smallish to mid desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-    .header__logo-inner {
-        position: absolute;
-        left: -2rem;
-        top: 0;
-        margin-top: 1rem;
-    }
-    .logo-div {
-        padding: 0;
-    }
-    div.logo-use-image img.logo_big {
-        height: 30px;
-        max-width: unset;
-        max-height: unset;
-    }
-    .header__menu {
-        margin-left: -5rem;
-    }
-    .phone-header {
-        right: 1rem;
-    }
-}
-
-/* big desktops */
-@media only screen and (min-width: 1200px) {
-    .header__logo-inner {
-        position: absolute;
-        left: -15rem;
-        top: 0;
-        margin-top: 1rem;
-    }
-    .logo-div {
-        padding: 0;
-    }
-    div.logo-use-image img.logo_big {
-        height: 40px;
-        max-width: unset;
-        max-height: unset;
-    }
 }

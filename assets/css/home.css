@@ -4,20 +4,38 @@ Homepage-specific stylings
 
 /* Homepage - rearrange order of boxes, scale for mobile */
  @media only screen and (max-width: 991px) {
-    .flex-container-home .row {
+    body.home .flex-container-home .row {
         display: flex;
         flex-flow: column;
     }
-    .flex-first {
+    body.home .flex-first {
         order: 1;
     }
-    .flex-second {
+    body.home .flex-second {
         order: 2;
     }
-    .flex-third {
+    body.home .flex-third {
         order: 3;
     }
-    .bordered-box {
-        margin-bottom: 2rem;
-    }
+}
+
+/* min heights, look pretty */
+body.home .bordered-box .col-inner {
+    min-height: 460px;
+}
+body.home .bordered-box .col-inner p:first-of-type {
+    min-height: 182px;
+}
+body.home .bordered-box .col-inner h5 {
+    min-height: 52px;
+}
+
+/* home page colors only */
+body.home .bordered-box .col-inner strong,
+body.home .bordered-box-simple .col-inner strong {
+	color: #f0f0f0;
+}
+body.home .bordered-box .col-inner,
+body.home .bordered-box-simple .col-inner {
+	border: #8b8b8e 1px solid;
 }

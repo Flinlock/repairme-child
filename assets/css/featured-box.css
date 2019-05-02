@@ -1,0 +1,26 @@
+/*
+ * All styles for featured box class
+ * These boxes have a solid color header and then a solid color text section
+ */
+
+ .featured-box {
+	border: solid 1px black;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.featured-box .featured-box-header {
+	border: solid 1px black;
+	padding: 1rem;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+.featured-box .featured-box-content {
+	padding: .3rem;
+    margin: 0;
+    text-align: center;
+}
+.featured-box {
+	background-color: #f0f0f0;
+}

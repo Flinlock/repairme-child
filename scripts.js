@@ -31,25 +31,17 @@ jQuery(document).ready(function() {
 * Currently not used
 *  */
 jQuery(document).ready(function(){
-    // White background buttons
-    jQuery('.read-more').readmore({
-        collapsedHeight: 170,
-        moreLink: '<i class="fa-2x fa-plus-circle read-more-button" aria-hidden="true"></i>',
-        lessLink: '<i class="fa-2x fa-minus-circle read-more-button" aria-hidden="true"></i>'
-    });
-    // Dark background buttons
-    jQuery('.read-more-dark').readmore({
-        collapsedHeight: 170,
-        moreLink: '<i class="fa-2x fa-plus-circle read-more-button-dark" aria-hidden="true"></i>',
-        lessLink: '<i class="fa-2x fa-minus-circle read-more-button-dark" aria-hidden="true"></i>'
-    });
+    
 
-    // Bordered box readmores
-    jQuery('.read-more-box .col-inner').readmore({
-        collapsedHeight: 125,
-        moreLink: '<i class="fa-2x fa-plus-square-o read-more-button" aria-hidden="true"></i>',
-        lessLink: '<i class="fa-2x fa-minus-square-o read-more-button" aria-hidden="true"></i>'
+    /*
+    jQuery(document).ready(function(){
+        jQuery('.featured-box').readmore({
+            collapsedHeight: 38,
+            moreLink: '<a href="#" class="read-more-button fw-btn">More</a>',
+            lessLink: '<a href="#" class="read-more-button fw-btn">Less</a>'
+        });
     });
+    */
 });
 
 /*

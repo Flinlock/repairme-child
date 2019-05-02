@@ -26,6 +26,7 @@ Text Domain: repairme-child
 @import "assets/css/buttons.css";
 @import "assets/css/forms.css";
 @import "assets/css/bordered-box.css";
+@import "assets/css/featured-box.css";
 
 /* hide the default theme header globally */
 .entry-header-wrapper {
@@ -35,6 +36,21 @@ Text Domain: repairme-child
 /* Menu items that don't go anywhere still need a pointer cursor */
 .nonclick-menu-item {
     cursor: pointer;
+}
+
+/* Global background color */
+body.home .content-area {
+    background-color: #0b0b0b;
+}
+
+/* everywhere else global background color */
+body:not(.home) .content-area {
+	background-color: #f0f0f0;
+}
+
+/* fix weird out of place box shadow */
+.page .entry-content__inner {
+	box-shadow: unset;
 }
 
 /*
@@ -60,6 +76,11 @@ Text Domain: repairme-child
 	border-radius: 4px;
 }
 
+/* Images embedded in text */
+.embedded-image {
+	margin-bottom: 2rem;
+}
+
 /*
  * Tables
  */
@@ -74,3 +95,12 @@ Text Domain: repairme-child
 p, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
 	margin: 0 0 .5rem 0;
 }
+
+/* 
+ * Spacing, margins, etc. For sections and other common items
+ */
+
+ body section {
+	 padding-top: 30px;
+	 padding-bottom: 30px;
+ }
