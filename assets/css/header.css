@@ -139,3 +139,11 @@ div.header__row2 {
         max-height: unset;
     }
 } 
+
+/* Fix weird sticky scroll and non-fixed header bug (thanks Mobile Menu) */
+.mob-menu-slideout .mobmenu-push-wrap {
+	
+	-webkit-transition: unset !important;
+	
+	-webkit-transform: unset !important;
+}

@@ -11,7 +11,7 @@
   */
 
 /* margins only on mobile, otherwise governed by section */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
 	section .bordered-box:not(:last-child), section .bordered-box-simple:not(:last-child) {
 		margin-bottom: 40px;
 	}

@@ -19,15 +19,17 @@ Homepage-specific stylings
     }
 }
 
-/* min heights, look pretty */
-body.home .bordered-box .col-inner {
-    min-height: 460px;
-}
-body.home .bordered-box .col-inner p:first-of-type {
-    min-height: 182px;
-}
-body.home .bordered-box .col-inner h5 {
-    min-height: 52px;
+/* min heights, look pretty. Only applies on mid and above desktop view */
+@media only screen and (min-width: 992px) {
+    body.home .bordered-box .col-inner {
+        min-height: 460px;
+    }
+    body.home .bordered-box .col-inner p:first-of-type {
+        min-height: 182px;
+    }
+    body.home .bordered-box .col-inner h5 {
+        min-height: 52px;
+    }
 }
 
 /* home page colors only */

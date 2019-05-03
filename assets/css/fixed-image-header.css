@@ -31,7 +31,7 @@
     margin-left: auto;
     width: 45%;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 4px;
 }
 .full-image-header .full-image-header-overlay h3 {
@@ -46,7 +46,7 @@
 /* Next section below the image header
  * Needs to be properly spaced */
 .below-full-image-header {
-    margin-top: 13rem;
+    margin-top: 5rem;
 }
 
 /*
@@ -67,10 +67,10 @@
 /** full size image header, tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .full-image-header .col-inner .unyson-media-image {
-        top: 5rem;
+        top: 3rem;
     }
     .full-image-header .full-image-header-overlay {
-        margin-top: 6rem;
+        margin-top: 3rem;
         width: 55%;
     }
     .full-image-header .full-image-header-overlay h3 {
@@ -80,14 +80,14 @@
         font-size: 1.5rem;
     }
     .below-full-image-header {
-        margin-top: 7rem;
+        margin-top: 0;
     }
 }
 
 /** full size image header, smartphones */
 @media only screen and (min-width: 410px) and (max-width: 767px) {
     .full-image-header .col-inner .unyson-media-image {
-        top: 5.6rem;
+        top: 3.3rem;
     }
     .full-image-header .full-image-header-overlay {
         width: 70%;
@@ -110,7 +110,7 @@
 /** baby phones */
 @media only screen and (max-width: 409px) {
     .full-image-header .col-inner .unyson-media-image {
-        top: 5.6rem;
+        top: 3.4rem;
     }
     .full-image-header .full-image-header-overlay {
         width: 80%;
