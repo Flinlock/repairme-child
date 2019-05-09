@@ -37,3 +37,27 @@
 		 margin-right: auto;
 	 }
  }
+
+ /* Desktop, position the boxes closer together */
+ @media only screen and (min-width: 991px) {
+	 .featured-box-container-left {
+		 padding-right: 0;
+		 padding-left: 30px;
+	 }
+	 .featured-box-container-right {
+		 padding-left: 0px;
+		 padding-right: 30px;
+	 }
+	 .featured-box-container-left .col-inner {
+		 padding-right: .3rem !important;
+		 padding-left: 7.7rem !important;
+	 }
+	 .featured-box-container-right .col-inner {
+		 padding-left: .3rem !important;
+		 padding-right: 7.7rem !important;
+	 }
+	 .featured-box:first-child {
+		 margin-bottom: .6rem;
+	 }
+
+ }
