@@ -38,11 +38,6 @@ Text Domain: repairme-child
     cursor: pointer;
 }
 
-/* everywhere else global background color */
-body:not(.home) .content-area {
-	background-color: #f0f0f0;
-}
-
 /* fix weird out of place box shadow */
 .page .entry-content__inner {
 	box-shadow: unset;
