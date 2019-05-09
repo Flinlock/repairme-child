@@ -18,6 +18,7 @@ $theme_options = repairme_get_theme_mods();
     <?php
     if (strpos(site_url(), 'edgedatarecovery') !== false) {
         ?>
+        <!-- Analytics tracking tag for Edge Data Recovery -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133456637-2"></script>
         <script>
