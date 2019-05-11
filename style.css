@@ -43,6 +43,11 @@ Text Domain: repairme-child
 	box-shadow: unset;
 }
 
+/* Darken text */
+body, button, input, select, textarea {
+	color: #3c3c3c;
+}
+
 /*
  * Images 
  */
