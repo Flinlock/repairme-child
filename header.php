@@ -14,7 +14,54 @@ $theme_options = repairme_get_theme_mods();
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-    <!-- Inject proper tracking code -->
+    <!-- Inject proper tracking codes and structured data -->
+    <!-- shared between both sites -->
+
+    <!-- Local business markup - shared between sites-->
+    <script type='application/ld+json'> 
+        {
+            "@context": "http://www.schema.org",
+            "@type": "LocalBusiness",
+            "name": "Edge Computer Repair & Data Recovery",
+            "url": "https://edgecomputerrepair.com",
+            "logo": "https://edgedacomputerrepair.com/wp-content/uploads/favicon.png",
+            "image": "https://edgedatarecovery.com/wp-content/uploads/edge-pic.jpg",
+            "description": "Professional data recovery services on all forms of media, specializing in severely damaged devices that were declared \"unrecoverable\" by other companies.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1720 West Mulberry Street STE B10",
+                "addressLocality": "Fort Collins",
+                "addressRegion": "Colorado",
+                "postalCode": "80525",
+                "addressCountry": "US"
+            },
+            "areaServed": {
+                "@type": "geoCircle",
+                "name": "Edge Service Area",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "postalCode": "80521",
+                    "latitude": "40.582520",
+                    "longitude": "-105.107485",
+                    "description": "Edge serves all of Northern Colorado",
+                    "name": "Edge Geo Location"
+                },
+                "geoRadius": "96560.6"
+            },
+            "numberOfEmployees": "2",
+            "telephone": "+1 (970) 568-8478",
+            "hasMap": "https://goo.gl/maps/ncHe1F14MSpesaQu8",
+            "openingHours": "Mo, Tu, We, Th, Fr 10:00-17:30 Sa 11:00-16:00",
+            "priceRange": "$80 - $1300",
+            "currenciesAccepted": "USD",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1 (970) 568-8478",
+                "contactType": "customer service"
+            }
+        }
+    </script>
+
     <?php
     if (strpos(site_url(), 'edgedatarecovery') !== false) {
         ?>
@@ -28,6 +75,7 @@ $theme_options = repairme_get_theme_mods();
         
         gtag('config', 'UA-133456637-2');
         </script>
+        
         <?php
     } elseif (strpos(site_url(), 'edgecomputerrepair') !== false) {
         ?>
@@ -41,6 +89,8 @@ $theme_options = repairme_get_theme_mods();
 
         gtag('config', 'UA-133456637-1');
         </script>
+
+       
         <?php
     } ?>
 
